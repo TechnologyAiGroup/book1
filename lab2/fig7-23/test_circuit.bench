@@ -1,0 +1,17 @@
+INPUT(I1)
+INPUT(I2)
+INPUT(I3)
+INPUT(I4)
+INPUT(I5)
+INPUT(I6)
+INPUT(I7)
+
+OUTPUT(O1)
+OUTPUT(O2)
+
+w1 = and(I1, I2)
+w2 = or(I3, I4)
+w3 = nor(w2, I5)
+w4 = nand(I6, I7)
+O1 = and(w1, w2)
+O2 = or(w3, w4)
