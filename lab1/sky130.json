@@ -1,0 +1,4021 @@
+{
+    "version": "1.0",
+    "std_cells": [
+        {
+            "name": [
+                "sky130_fd_sc_hd__clkinv_1",
+                "sky130_fd_sc_hd__clkinv_2",
+                "sky130_fd_sc_hd__clkinv_4",
+                "sky130_fd_sc_hd__clkinv_8",
+                "sky130_fd_sc_hd__clkinv_16",
+                "sky130_fd_sc_hd__inv_1",
+                "sky130_fd_sc_hd__inv_2",
+                "sky130_fd_sc_hd__inv_4",
+                "sky130_fd_sc_hd__inv_6",
+                "sky130_fd_sc_hd__inv_8",
+                "sky130_fd_sc_hd__inv_12",
+                "sky130_fd_sc_hd__inv_16",
+                "sky130_fd_sc_hd__bufinv_8",
+                "sky130_fd_sc_hd__bufinv_16"
+            ],
+            "signals": [
+                {
+                    "input": [
+                        "A"
+                    ],
+                    "output": [
+                        "Y"
+                    ],
+                    "wire": []
+                }
+            ],
+            "sim_primitives": [
+                {
+                    "sim_type": "NOT",
+                    "connection": [
+                        "Y",
+                        "A"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": [
+                "sky130_fd_sc_hd__clkbuf_1",
+                "sky130_fd_sc_hd__clkbuf_2",
+                "sky130_fd_sc_hd__clkbuf_4",
+                "sky130_fd_sc_hd__clkbuf_8",
+                "sky130_fd_sc_hd__clkbuf_16",
+                "sky130_fd_sc_hd__buf_1",
+                "sky130_fd_sc_hd__buf_2",
+                "sky130_fd_sc_hd__buf_4",
+                "sky130_fd_sc_hd__buf_6",
+                "sky130_fd_sc_hd__buf_8",
+                "sky130_fd_sc_hd__buf_12"
+            ],
+            "signals": [
+                {
+                    "input": [
+                        "A"
+                    ],
+                    "output": [
+                        "X"
+                    ],
+                    "wire": []
+                }
+            ],
+            "sim_primitives": [
+                {
+                    "sim_type": "BUF",
+                    "connection": [
+                        "X",
+                        "A"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": [
+                "sky130_fd_sc_hd__nand2_1",
+                "sky130_fd_sc_hd__nand2_2",
+                "sky130_fd_sc_hd__nand2_4",
+                "sky130_fd_sc_hd__nand2_8"
+            ],
+            "signals": [
+                {
+                    "input": [
+                        "A",
+                        "B"
+                    ],
+                    "output": [
+                        "Y"
+                    ],
+                    "wire": []
+                }
+            ],
+            "sim_primitives": [
+                {
+                    "sim_type": "NAND",
+                    "connection": [
+                        "Y",
+                        "A",
+                        "B"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": [
+                "sky130_fd_sc_hd__nand2b_1",
+                "sky130_fd_sc_hd__nand2b_2",
+                "sky130_fd_sc_hd__nand2b_4"
+            ],
+            "signals": [
+                {
+                    "input": [
+                        "A_N",
+                        "B"
+                    ],
+                    "output": [
+                        "Y"
+                    ],
+                    "wire": [
+                        "not0_out"
+                    ]
+                }
+            ],
+            "sim_primitives": [
+                {
+                    "sim_type": "NOT",
+                    "connection": [
+                        "not0_out",
+                        "B"
+                    ]
+                },
+                {
+                    "sim_type": "OR",
+                    "connection": [
+                        "Y",
+                        "not0_out",
+                        "A_N"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": [
+                "sky130_fd_sc_hd__nand3b_1",
+                "sky130_fd_sc_hd__nand3b_2",
+                "sky130_fd_sc_hd__nand3b_4"
+            ],
+            "signals": [
+                {
+                    "input": [
+                        "A_N",
+                        "B",
+                        "C"
+                    ],
+                    "output": [
+                        "Y"
+                    ],
+                    "wire": [
+                        "not0_out"
+                    ]
+                }
+            ],
+            "sim_primitives": [
+                {
+                    "sim_type": "NOT",
+                    "connection": [
+                        "not0_out",
+                        "A_N"
+                    ]
+                },
+                {
+                    "sim_type": "NAND",
+                    "connection": [
+                        "Y",
+                        "B",
+                        "not0_out",
+                        "C"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": [
+                "sky130_fd_sc_hd__nand3_1",
+                "sky130_fd_sc_hd__nand3_2",
+                "sky130_fd_sc_hd__nand3_4"
+            ],
+            "signals": [
+                {
+                    "input": [
+                        "A",
+                        "B",
+                        "C"
+                    ],
+                    "output": [
+                        "Y"
+                    ],
+                    "wire": []
+                }
+            ],
+            "sim_primitives": [
+                {
+                    "sim_type": "NAND",
+                    "connection": [
+                        "Y",
+                        "A",
+                        "B",
+                        "C"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": [
+                "sky130_fd_sc_hd__nand4_1",
+                "sky130_fd_sc_hd__nand4_2",
+                "sky130_fd_sc_hd__nand4_4"
+            ],
+            "signals": [
+                {
+                    "input": [
+                        "A",
+                        "B",
+                        "C",
+                        "D"
+                    ],
+                    "output": [
+                        "Y"
+                    ],
+                    "wire": []
+                }
+            ],
+            "sim_primitives": [
+                {
+                    "sim_type": "NAND",
+                    "connection": [
+                        "Y",
+                        "A",
+                        "B",
+                        "C",
+                        "D"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": [
+                "sky130_fd_sc_hd__nand4bb_1",
+                "sky130_fd_sc_hd__nand4bb_2"
+            ],
+            "signals": [
+                {
+                    "input": [
+                        "A_N",
+                        "B_N",
+                        "C",
+                        "D"
+                    ],
+                    "output": [
+                        "Y"
+                    ],
+                    "wire": [
+                        "nand0_out"
+                    ]
+                }
+            ],
+            "sim_primitives": [
+                {
+                    "sim_type": "NAND",
+                    "connection": [
+                        "nand0_out",
+                        "C",
+                        "D"
+                    ]
+                },
+                {
+                    "sim_type": "OR",
+                    "connection": [
+                        "Y",
+                        "A_N",
+                        "B_N",
+                        "nand0_out"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": [
+                "sky130_fd_sc_hd__nand4b_1",
+                "sky130_fd_sc_hd__nand4b_2",
+                "sky130_fd_sc_hd__nand4b_4"
+            ],
+            "signals": [
+                {
+                    "input": [
+                        "A_N",
+                        "B",
+                        "C",
+                        "D"
+                    ],
+                    "output": [
+                        "Y"
+                    ],
+                    "wire": [
+                        "not0_out"
+                    ]
+                }
+            ],
+            "sim_primitives": [
+                {
+                    "sim_type": "NOT",
+                    "connection": [
+                        "not0_out",
+                        "A_N"
+                    ]
+                },
+                {
+                    "sim_type": "NAND",
+                    "connection": [
+                        "Y",
+                        "not0_out",
+                        "B",
+                        "C",
+                        "D"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": [
+                "sky130_fd_sc_hd__nor2_1",
+                "sky130_fd_sc_hd__nor2_2",
+                "sky130_fd_sc_hd__nor2_4",
+                "sky130_fd_sc_hd__nor2_8"
+            ],
+            "signals": [
+                {
+                    "input": [
+                        "A",
+                        "B"
+                    ],
+                    "output": [
+                        "Y"
+                    ],
+                    "wire": []
+                }
+            ],
+            "sim_primitives": [
+                {
+                    "sim_type": "NOR",
+                    "connection": [
+                        "Y",
+                        "A",
+                        "B"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": [
+                "sky130_fd_sc_hd__nor3_1",
+                "sky130_fd_sc_hd__nor3_2",
+                "sky130_fd_sc_hd__nor3_4"
+            ],
+            "signals": [
+                {
+                    "input": [
+                        "A",
+                        "B",
+                        "C"
+                    ],
+                    "output": [
+                        "Y"
+                    ],
+                    "wire": []
+                }
+            ],
+            "sim_primitives": [
+                {
+                    "sim_type": "NOR",
+                    "connection": [
+                        "Y",
+                        "A",
+                        "B",
+                        "C"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": [
+                "sky130_fd_sc_hd__nor4_1",
+                "sky130_fd_sc_hd__nor4_2",
+                "sky130_fd_sc_hd__nor4_4"
+            ],
+            "signals": [
+                {
+                    "input": [
+                        "A",
+                        "B",
+                        "C",
+                        "D"
+                    ],
+                    "output": [
+                        "Y"
+                    ],
+                    "wire": []
+                }
+            ],
+            "sim_primitives": [
+                {
+                    "sim_type": "NOR",
+                    "connection": [
+                        "Y",
+                        "A",
+                        "B",
+                        "C",
+                        "D"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": [
+                "sky130_fd_sc_hd__nor2b_1",
+                "sky130_fd_sc_hd__nor2b_2"
+            ],
+            "signals": [
+                {
+                    "input": [
+                        "A",
+                        "B_N"
+                    ],
+                    "output": [
+                        "Y"
+                    ],
+                    "wire": [
+                        "not0_out"
+                    ]
+                }
+            ],
+            "sim_primitives": [
+                {
+                    "sim_type": "NOT",
+                    "connection": [
+                        "not0_out",
+                        "A"
+                    ]
+                },
+                {
+                    "sim_type": "AND",
+                    "connection": [
+                        "Y",
+                        "not0_out",
+                        "B_N"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": [
+                "sky130_fd_sc_hd__nor3b_1",
+                "sky130_fd_sc_hd__nor3b_2"
+            ],
+            "signals": [
+                {
+                    "input": [
+                        "A",
+                        "B",
+                        "C_N"
+                    ],
+                    "output": [
+                        "Y"
+                    ],
+                    "wire": [
+                        "nor0_out"
+                    ]
+                }
+            ],
+            "sim_primitives": [
+                {
+                    "sim_type": "NOR",
+                    "connection": [
+                        "nor0_out",
+                        "A",
+                        "B"
+                    ]
+                },
+                {
+                    "sim_type": "AND",
+                    "connection": [
+                        "Y",
+                        "nor0_out",
+                        "C_N"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": [
+                "sky130_fd_sc_hd__nor4b_1",
+                "sky130_fd_sc_hd__nor4b_2"
+            ],
+            "signals": [
+                {
+                    "input": [
+                        "A",
+                        "B",
+                        "C",
+                        "D_N"
+                    ],
+                    "output": [
+                        "Y"
+                    ],
+                    "wire": [
+                        "not0_out"
+                    ]
+                }
+            ],
+            "sim_primitives": [
+                {
+                    "sim_type": "NOT",
+                    "connection": [
+                        "not0_out",
+                        "D_N"
+                    ]
+                },
+                {
+                    "sim_type": "NOR",
+                    "connection": [
+                        "Y",
+                        "A",
+                        "B",
+                        "C",
+                        "not0_out"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": [
+                "sky130_fd_sc_hd__nor4bb_1",
+                "sky130_fd_sc_hd__nor4bb_2"
+            ],
+            "signals": [
+                {
+                    "input": [
+                        "A",
+                        "B",
+                        "C_N",
+                        "D_N"
+                    ],
+                    "output": [
+                        "Y"
+                    ],
+                    "wire": [
+                        "nor0_out"
+                    ]
+                }
+            ],
+            "sim_primitives": [
+                {
+                    "sim_type": "NOR",
+                    "connection": [
+                        "nor0_out",
+                        "A",
+                        "B"
+                    ]
+                },
+                {
+                    "sim_type": "AND",
+                    "connection": [
+                        "Y",
+                        "nor0_out",
+                        "C_N",
+                        "D_N"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": [
+                "sky130_fd_sc_hd__and2_0",
+                "sky130_fd_sc_hd__and2_1",
+                "sky130_fd_sc_hd__and2_2",
+                "sky130_fd_sc_hd__and2_4"
+            ],
+            "signals": [
+                {
+                    "input": [
+                        "A",
+                        "B"
+                    ],
+                    "output": [
+                        "X"
+                    ],
+                    "wire": []
+                }
+            ],
+            "sim_primitives": [
+                {
+                    "sim_type": "AND",
+                    "connection": [
+                        "X",
+                        "A",
+                        "B"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": [
+                "sky130_fd_sc_hd__and4_1",
+                "sky130_fd_sc_hd__and4_2",
+                "sky130_fd_sc_hd__and4_4"
+            ],
+            "signals": [
+                {
+                    "input": [
+                        "A",
+                        "B",
+                        "C",
+                        "D"
+                    ],
+                    "output": [
+                        "X"
+                    ],
+                    "wire": []
+                }
+            ],
+            "sim_primitives": [
+                {
+                    "sim_type": "AND",
+                    "connection": [
+                        "X",
+                        "A",
+                        "B",
+                        "C",
+                        "D"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": [
+                "sky130_fd_sc_hd__and3_1",
+                "sky130_fd_sc_hd__and3_2",
+                "sky130_fd_sc_hd__and3_4"
+            ],
+            "signals": [
+                {
+                    "input": [
+                        "A",
+                        "B",
+                        "C"
+                    ],
+                    "output": [
+                        "X"
+                    ],
+                    "wire": []
+                }
+            ],
+            "sim_primitives": [
+                {
+                    "sim_type": "AND",
+                    "connection": [
+                        "X",
+                        "A",
+                        "B",
+                        "C"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": [
+                "sky130_fd_sc_hd__and2b_1",
+                "sky130_fd_sc_hd__and2b_2",
+                "sky130_fd_sc_hd__and2b_4"
+            ],
+            "signals": [
+                {
+                    "input": [
+                        "A_N",
+                        "B"
+                    ],
+                    "output": [
+                        "X"
+                    ],
+                    "wire": [
+                        "not0_out"
+                    ]
+                }
+            ],
+            "sim_primitives": [
+                {
+                    "sim_type": "NOT",
+                    "connection": [
+                        "not0_out",
+                        "A_N"
+                    ]
+                },
+                {
+                    "sim_type": "AND",
+                    "connection": [
+                        "X",
+                        "not0_out",
+                        "B"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": [
+                "sky130_fd_sc_hd__and4b_1"
+            ],
+            "signals": [
+                {
+                    "input": [
+                        "A_N",
+                        "B",
+                        "C",
+                        "D"
+                    ],
+                    "output": [
+                        "X"
+                    ],
+                    "wire": [
+                        "not0_out"
+                    ]
+                }
+            ],
+            "sim_primitives": [
+                {
+                    "sim_type": "NOT",
+                    "connection": [
+                        "not0_out",
+                        "A_N"
+                    ]
+                },
+                {
+                    "sim_type": "AND",
+                    "connection": [
+                        "X",
+                        "not0_out",
+                        "B",
+                        "C",
+                        "D"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": [
+                "sky130_fd_sc_hd__and3b_1"
+            ],
+            "signals": [
+                {
+                    "input": [
+                        "A_N",
+                        "B",
+                        "C"
+                    ],
+                    "output": [
+                        "X"
+                    ],
+                    "wire": [
+                        "not0_out"
+                    ]
+                }
+            ],
+            "sim_primitives": [
+                {
+                    "sim_type": "NOT",
+                    "connection": [
+                        "not0_out",
+                        "A_N"
+                    ]
+                },
+                {
+                    "sim_type": "AND",
+                    "connection": [
+                        "X",
+                        "not0_out",
+                        "B",
+                        "C"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": [
+                "sky130_fd_sc_hd__or2_0",
+                "sky130_fd_sc_hd__or2_1",
+                "sky130_fd_sc_hd__or2_2",
+                "sky130_fd_sc_hd__or2_4"
+            ],
+            "signals": [
+                {
+                    "input": [
+                        "A",
+                        "B"
+                    ],
+                    "output": [
+                        "X"
+                    ],
+                    "wire": []
+                }
+            ],
+            "sim_primitives": [
+                {
+                    "sim_type": "OR",
+                    "connection": [
+                        "X",
+                        "A",
+                        "B"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": [
+                "sky130_fd_sc_hd__or2b_1",
+                "sky130_fd_sc_hd__or2b_2",
+                "sky130_fd_sc_hd__or2b_4"
+            ],
+            "signals": [
+                {
+                    "input": [
+                        "A",
+                        "B_N"
+                    ],
+                    "output": [
+                        "X"
+                    ],
+                    "wire": [
+                        "not0_out"
+                    ]
+                }
+            ],
+            "sim_primitives": [
+                {
+                    "sim_type": "NOT",
+                    "connection": [
+                        "not0_out",
+                        "B_N"
+                    ]
+                },
+                {
+                    "sim_type": "OR",
+                    "connection": [
+                        "X",
+                        "A",
+                        "not0_out"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": [
+                "sky130_fd_sc_hd__or3_1",
+                "sky130_fd_sc_hd__or3_2",
+                "sky130_fd_sc_hd__or3_4"
+            ],
+            "signals": [
+                {
+                    "input": [
+                        "A",
+                        "B",
+                        "C"
+                    ],
+                    "output": [
+                        "X"
+                    ],
+                    "wire": []
+                }
+            ],
+            "sim_primitives": [
+                {
+                    "sim_type": "OR",
+                    "connection": [
+                        "X",
+                        "A",
+                        "B",
+                        "C"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": [
+                "sky130_fd_sc_hd__or4_1",
+                "sky130_fd_sc_hd__or4_2",
+                "sky130_fd_sc_hd__or4_4"
+            ],
+            "signals": [
+                {
+                    "input": [
+                        "A",
+                        "B",
+                        "C",
+                        "D"
+                    ],
+                    "output": [
+                        "X"
+                    ],
+                    "wire": []
+                }
+            ],
+            "sim_primitives": [
+                {
+                    "sim_type": "OR",
+                    "connection": [
+                        "X",
+                        "A",
+                        "B",
+                        "C",
+                        "D"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": [
+                "sky130_fd_sc_hd__or3b_4"
+            ],
+            "signals": [
+                {
+                    "input": [
+                        "A",
+                        "B",
+                        "C_N"
+                    ],
+                    "output": [
+                        "X"
+                    ],
+                    "wire": [
+                        "not0_out"
+                    ]
+                }
+            ],
+            "sim_primitives": [
+                {
+                    "sim_type": "NOT",
+                    "connection": [
+                        "not0_out",
+                        "C_N"
+                    ]
+                },
+                {
+                    "sim_type": "OR",
+                    "connection": [
+                        "X",
+                        "A",
+                        "B",
+                        "not0_out"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": [
+                "sky130_fd_sc_hd__xor2_1",
+                "sky130_fd_sc_hd__xor2_2",
+                "sky130_fd_sc_hd__xor2_4"
+            ],
+            "signals": [
+                {
+                    "input": [
+                        "A",
+                        "B"
+                    ],
+                    "output": [
+                        "X"
+                    ],
+                    "wire": []
+                }
+            ],
+            "sim_primitives": [
+                {
+                    "sim_type": "XOR",
+                    "connection": [
+                        "X",
+                        "A",
+                        "B"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": [
+                "sky130_fd_sc_hd__xor3_1"
+            ],
+            "signals": [
+                {
+                    "input": [
+                        "A",
+                        "B",
+                        "C"
+                    ],
+                    "output": [
+                        "X"
+                    ],
+                    "wire": []
+                }
+            ],
+            "sim_primitives": [
+                {
+                    "sim_type": "XOR",
+                    "connection": [
+                        "X",
+                        "A",
+                        "B",
+                        "C"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": [
+                "sky130_fd_sc_hd__xnor2_1",
+                "sky130_fd_sc_hd__xnor2_2",
+                "sky130_fd_sc_hd__xnor2_4"
+            ],
+            "signals": [
+                {
+                    "input": [
+                        "A",
+                        "B"
+                    ],
+                    "output": [
+                        "Y"
+                    ],
+                    "wire": []
+                }
+            ],
+            "sim_primitives": [
+                {
+                    "sim_type": "XNOR",
+                    "connection": [
+                        "Y",
+                        "A",
+                        "B"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": [
+                "sky130_fd_sc_hd__xnor3_1"
+            ],
+            "signals": [
+                {
+                    "input": [
+                        "A",
+                        "B",
+                        "C"
+                    ],
+                    "output": [
+                        "X"
+                    ],
+                    "wire": []
+                }
+            ],
+            "sim_primitives": [
+                {
+                    "sim_type": "XNOR",
+                    "connection": [
+                        "X",
+                        "A",
+                        "B",
+                        "C"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": [
+                "sky130_fd_sc_hd__a2bb2oi_1",
+                "sky130_fd_sc_hd__a2bb2oi_2"
+            ],
+            "signals": [
+                {
+                    "input": [
+                        "A1_N",
+                        "A2_N",
+                        "B1",
+                        "B2"
+                    ],
+                    "output": [
+                        "Y"
+                    ],
+                    "wire": [
+                        "and0_out",
+                        "nor0_out"
+                    ]
+                }
+            ],
+            "sim_primitives": [
+                {
+                    "sim_type": "AND",
+                    "connection": [
+                        "and0_out",
+                        "B1",
+                        "B2"
+                    ]
+                },
+                {
+                    "sim_type": "NOR",
+                    "connection": [
+                        "nor0_out",
+                        "A1_N",
+                        "A2_N"
+                    ]
+                },
+                {
+                    "sim_type": "NOR",
+                    "connection": [
+                        "Y",
+                        "nor0_out",
+                        "and0_out"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": [
+                "sky130_fd_sc_hd__a22o_1",
+                "sky130_fd_sc_hd__a22o_2",
+                "sky130_fd_sc_hd__a22o_4"
+            ],
+            "signals": [
+                {
+                    "input": [
+                        "A1",
+                        "A2",
+                        "B1",
+                        "B2"
+                    ],
+                    "output": [
+                        "X"
+                    ],
+                    "wire": [
+                        "and0_out",
+                        "and1_out"
+                    ]
+                }
+            ],
+            "sim_primitives": [
+                {
+                    "sim_type": "AND",
+                    "connection": [
+                        "and0_out",
+                        "B1",
+                        "B2"
+                    ]
+                },
+                {
+                    "sim_type": "AND",
+                    "connection": [
+                        "and1_out",
+                        "A1",
+                        "A2"
+                    ]
+                },
+                {
+                    "sim_type": "OR",
+                    "connection": [
+                        "X",
+                        "and0_out",
+                        "and1_out"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": [
+                "sky130_fd_sc_hd__a21oi_1",
+                "sky130_fd_sc_hd__a21oi_2",
+                "sky130_fd_sc_hd__a21oi_4"
+            ],
+            "signals": [
+                {
+                    "input": [
+                        "A1",
+                        "A2",
+                        "B1"
+                    ],
+                    "output": [
+                        "Y"
+                    ],
+                    "wire": [
+                        "and0_out"
+                    ]
+                }
+            ],
+            "sim_primitives": [
+                {
+                    "sim_type": "AND",
+                    "connection": [
+                        "and0_out",
+                        "A1",
+                        "A2"
+                    ]
+                },
+                {
+                    "sim_type": "NOR",
+                    "connection": [
+                        "Y",
+                        "and0_out",
+                        "B1"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": [
+                "sky130_fd_sc_hd__a21boi_0",
+                "sky130_fd_sc_hd__a21boi_1",
+                "sky130_fd_sc_hd__a21boi_2",
+                "sky130_fd_sc_hd__a21boi_4"
+            ],
+            "signals": [
+                {
+                    "input": [
+                        "A1",
+                        "A2",
+                        "B1_N"
+                    ],
+                    "output": [
+                        "Y"
+                    ],
+                    "wire": [
+                        "b",
+                        "and0_out"
+                    ]
+                }
+            ],
+            "sim_primitives": [
+                {
+                    "sim_type": "NOT",
+                    "connection": [
+                        "b",
+                        "B1_N"
+                    ]
+                },
+                {
+                    "sim_type": "AND",
+                    "connection": [
+                        "and0_out",
+                        "A1",
+                        "A2"
+                    ]
+                },
+                {
+                    "sim_type": "NOR",
+                    "connection": [
+                        "Y",
+                        "b",
+                        "and0_out"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": [
+                "sky130_fd_sc_hd__a22oi_1",
+                "sky130_fd_sc_hd__a22oi_2",
+                "sky130_fd_sc_hd__a22oi_4"
+            ],
+            "signals": [
+                {
+                    "input": [
+                        "A1",
+                        "A2",
+                        "B1",
+                        "B2"
+                    ],
+                    "output": [
+                        "Y"
+                    ],
+                    "wire": [
+                        "nand0_out",
+                        "nand1_out"
+                    ]
+                }
+            ],
+            "sim_primitives": [
+                {
+                    "sim_type": "NAND",
+                    "connection": [
+                        "nand0_out",
+                        "A1",
+                        "A2"
+                    ]
+                },
+                {
+                    "sim_type": "NAND",
+                    "connection": [
+                        "nand1_out",
+                        "B1",
+                        "B2"
+                    ]
+                },
+                {
+                    "sim_type": "AND",
+                    "connection": [
+                        "Y",
+                        "nand0_out",
+                        "nand1_out"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": [
+                "sky130_fd_sc_hd__a21o_1",
+                "sky130_fd_sc_hd__a21o_2",
+                "sky130_fd_sc_hd__a21o_4"
+            ],
+            "signals": [
+                {
+                    "input": [
+                        "A1",
+                        "A2",
+                        "B1"
+                    ],
+                    "output": [
+                        "X"
+                    ],
+                    "wire": [
+                        "and0_out"
+                    ]
+                }
+            ],
+            "sim_primitives": [
+                {
+                    "sim_type": "AND",
+                    "connection": [
+                        "and0_out",
+                        "A1",
+                        "A2"
+                    ]
+                },
+                {
+                    "sim_type": "OR",
+                    "connection": [
+                        "X",
+                        "and0_out",
+                        "B1"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": [
+                "sky130_fd_sc_hd__a2111oi_0",
+                "sky130_fd_sc_hd__a2111oi_1",
+                "sky130_fd_sc_hd__a2111oi_2"
+            ],
+            "signals": [
+                {
+                    "input": [
+                        "A1",
+                        "A2",
+                        "B1",
+                        "C1",
+                        "D1"
+                    ],
+                    "output": [
+                        "Y"
+                    ],
+                    "wire": [
+                        "and0_out"
+                    ]
+                }
+            ],
+            "sim_primitives": [
+                {
+                    "sim_type": "AND",
+                    "connection": [
+                        "and0_out",
+                        "A1",
+                        "A2"
+                    ]
+                },
+                {
+                    "sim_type": "NOR",
+                    "connection": [
+                        "Y",
+                        "and0_out",
+                        "B1",
+                        "C1",
+                        "D1"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": [
+                "sky130_fd_sc_hd__a221oi_1",
+                "sky130_fd_sc_hd__a221oi_2"
+            ],
+            "signals": [
+                {
+                    "input": [
+                        "A1",
+                        "A2",
+                        "B1",
+                        "B2",
+                        "C1"
+                    ],
+                    "output": [
+                        "Y"
+                    ],
+                    "wire": [
+                        "and0_out",
+                        "and1_out"
+                    ]
+                }
+            ],
+            "sim_primitives": [
+                {
+                    "sim_type": "AND",
+                    "connection": [
+                        "and0_out",
+                        "B1",
+                        "B2"
+                    ]
+                },
+                {
+                    "sim_type": "AND",
+                    "connection": [
+                        "and1_out",
+                        "A1",
+                        "A2"
+                    ]
+                },
+                {
+                    "sim_type": "NOR",
+                    "connection": [
+                        "Y",
+                        "and0_out",
+                        "and1_out",
+                        "C1"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": [
+                "sky130_fd_sc_hd__a2bb2o_1",
+                "sky130_fd_sc_hd__a2bb2o_2",
+                "sky130_fd_sc_hd__a2bb2o_4"
+            ],
+            "signals": [
+                {
+                    "input": [
+                        "A1_N",
+                        "A2_N",
+                        "B1",
+                        "B2"
+                    ],
+                    "output": [
+                        "X"
+                    ],
+                    "wire": [
+                        "and0_out",
+                        "nor0_out"
+                    ]
+                }
+            ],
+            "sim_primitives": [
+                {
+                    "sim_type": "AND",
+                    "connection": [
+                        "and0_out",
+                        "B1",
+                        "B2"
+                    ]
+                },
+                {
+                    "sim_type": "NOR",
+                    "connection": [
+                        "nor0_out",
+                        "A1_N",
+                        "A2_N"
+                    ]
+                },
+                {
+                    "sim_type": "OR",
+                    "connection": [
+                        "X",
+                        "and0_out",
+                        "nor0_out"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": [
+                "sky130_fd_sc_hd__a211oi_1",
+                "sky130_fd_sc_hd__a211oi_2"
+            ],
+            "signals": [
+                {
+                    "input": [
+                        "A1",
+                        "A2",
+                        "B1",
+                        "C1"
+                    ],
+                    "output": [
+                        "Y"
+                    ],
+                    "wire": [
+                        "and0_out"
+                    ]
+                }
+            ],
+            "sim_primitives": [
+                {
+                    "sim_type": "AND",
+                    "connection": [
+                        "and0_out",
+                        "A1",
+                        "A2"
+                    ]
+                },
+                {
+                    "sim_type": "NOR",
+                    "connection": [
+                        "Y",
+                        "and0_out",
+                        "B1",
+                        "C1"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": [
+                "sky130_fd_sc_hd__a21bo_2",
+                "sky130_fd_sc_hd__a21bo_4"
+            ],
+            "signals": [
+                {
+                    "input": [
+                        "A1",
+                        "A2",
+                        "B1_N"
+                    ],
+                    "output": [
+                        "X"
+                    ],
+                    "wire": [
+                        "nand0_out"
+                    ]
+                }
+            ],
+            "sim_primitives": [
+                {
+                    "sim_type": "NAND",
+                    "connection": [
+                        "nand0_out",
+                        "A1",
+                        "A2"
+                    ]
+                },
+                {
+                    "sim_type": "NAND",
+                    "connection": [
+                        "X",
+                        "nand0_out",
+                        "B1_N"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": [
+                "sky130_fd_sc_hd__a221o_1"
+            ],
+            "signals": [
+                {
+                    "input": [
+                        "A1",
+                        "A2",
+                        "B1",
+                        "B2",
+                        "C1"
+                    ],
+                    "output": [
+                        "X"
+                    ],
+                    "wire": [
+                        "and0_out",
+                        "and1_out"
+                    ]
+                }
+            ],
+            "sim_primitives": [
+                {
+                    "sim_type": "AND",
+                    "connection": [
+                        "and0_out",
+                        "B1",
+                        "B2"
+                    ]
+                },
+                {
+                    "sim_type": "AND",
+                    "connection": [
+                        "and1_out",
+                        "A1",
+                        "A2"
+                    ]
+                },
+                {
+                    "sim_type": "OR",
+                    "connection": [
+                        "X",
+                        "and0_out",
+                        "and1_out",
+                        "C1"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": [
+                "sky130_fd_sc_hd__a222oi_1"
+            ],
+            "signals": [
+                {
+                    "input": [
+                        "A1",
+                        "A2",
+                        "B1",
+                        "B2",
+                        "C1",
+                        "C2"
+                    ],
+                    "output": [
+                        "Y"
+                    ],
+                    "wire": [
+                        "nand0_out",
+                        "nand1_out",
+                        "nand2_out"
+                    ]
+                }
+            ],
+            "sim_primitives": [
+                {
+                    "sim_type": "NAND",
+                    "connection": [
+                        "nand0_out",
+                        "A1",
+                        "A2"
+                    ]
+                },
+                {
+                    "sim_type": "NAND",
+                    "connection": [
+                        "nand1_out",
+                        "B1",
+                        "B2"
+                    ]
+                },
+                {
+                    "sim_type": "NAND",
+                    "connection": [
+                        "nand2_out",
+                        "C1",
+                        "C2"
+                    ]
+                },
+                {
+                    "sim_type": "AND",
+                    "connection": [
+                        "Y",
+                        "nand0_out",
+                        "nand1_out",
+                        "nand2_out"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": [
+                "sky130_fd_sc_hd__a211o_1",
+                "sky130_fd_sc_hd__a211o_2"
+            ],
+            "signals": [
+                {
+                    "input": [
+                        "A1",
+                        "A2",
+                        "B1",
+                        "C1"
+                    ],
+                    "output": [
+                        "X"
+                    ],
+                    "wire": [
+                        "and0_out"
+                    ]
+                }
+            ],
+            "sim_primitives": [
+                {
+                    "sim_type": "AND",
+                    "connection": [
+                        "and0_out",
+                        "A1",
+                        "A2"
+                    ]
+                },
+                {
+                    "sim_type": "OR",
+                    "connection": [
+                        "X",
+                        "and0_out",
+                        "B1",
+                        "C1"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": [
+                "sky130_fd_sc_hd__a31o_1",
+                "sky130_fd_sc_hd__a31o_2"
+            ],
+            "signals": [
+                {
+                    "input": [
+                        "A1",
+                        "A2",
+                        "A3",
+                        "B1"
+                    ],
+                    "output": [
+                        "X"
+                    ],
+                    "wire": [
+                        "and0_out"
+                    ]
+                }
+            ],
+            "sim_primitives": [
+                {
+                    "sim_type": "AND",
+                    "connection": [
+                        "and0_out",
+                        "A1",
+                        "A2",
+                        "A3"
+                    ]
+                },
+                {
+                    "sim_type": "OR",
+                    "connection": [
+                        "X",
+                        "and0_out",
+                        "B1"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": [
+                "sky130_fd_sc_hd__a31oi_1",
+                "sky130_fd_sc_hd__a31oi_2",
+                "sky130_fd_sc_hd__a31oi_4"
+            ],
+            "signals": [
+                {
+                    "input": [
+                        "A1",
+                        "A2",
+                        "A3",
+                        "B1"
+                    ],
+                    "output": [
+                        "Y"
+                    ],
+                    "wire": [
+                        "and0_out"
+                    ]
+                }
+            ],
+            "sim_primitives": [
+                {
+                    "sim_type": "AND",
+                    "connection": [
+                        "and0_out",
+                        "A1",
+                        "A2",
+                        "A3"
+                    ]
+                },
+                {
+                    "sim_type": "NOR",
+                    "connection": [
+                        "Y",
+                        "and0_out",
+                        "B1"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": [
+                "sky130_fd_sc_hd__a32oi_1"
+            ],
+            "signals": [
+                {
+                    "input": [
+                        "A1",
+                        "A2",
+                        "A3",
+                        "B1",
+                        "B2"
+                    ],
+                    "output": [
+                        "Y"
+                    ],
+                    "wire": [
+                        "nand0_out",
+                        "nand1_out"
+                    ]
+                }
+            ],
+            "sim_primitives": [
+                {
+                    "sim_type": "NAND",
+                    "connection": [
+                        "nand0_out",
+                        "A1",
+                        "A2",
+                        "A3"
+                    ]
+                },
+                {
+                    "sim_type": "NAND",
+                    "connection": [
+                        "nand1_out",
+                        "B1",
+                        "B2"
+                    ]
+                },
+                {
+                    "sim_type": "AND",
+                    "connection": [
+                        "Y",
+                        "nand0_out",
+                        "nand1_out"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": [
+                "sky130_fd_sc_hd__a311oi_1"
+            ],
+            "signals": [
+                {
+                    "input": [
+                        "A1",
+                        "A2",
+                        "A3",
+                        "B1",
+                        "C1"
+                    ],
+                    "output": [
+                        "Y"
+                    ],
+                    "wire": [
+                        "and0_out"
+                    ]
+                }
+            ],
+            "sim_primitives": [
+                {
+                    "sim_type": "AND",
+                    "connection": [
+                        "and0_out",
+                        "A1",
+                        "A2",
+                        "A3"
+                    ]
+                },
+                {
+                    "sim_type": "NOR",
+                    "connection": [
+                        "Y",
+                        "and0_out",
+                        "B1",
+                        "C1"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": [
+                "sky130_fd_sc_hd__a41oi_1"
+            ],
+            "signals": [
+                {
+                    "input": [
+                        "A1",
+                        "A2",
+                        "A3",
+                        "A4",
+                        "B1"
+                    ],
+                    "output": [
+                        "Y"
+                    ],
+                    "wire": [
+                        "and0_out"
+                    ]
+                }
+            ],
+            "sim_primitives": [
+                {
+                    "sim_type": "AND",
+                    "connection": [
+                        "and0_out",
+                        "A1",
+                        "A2",
+                        "A3",
+                        "A4"
+                    ]
+                },
+                {
+                    "sim_type": "NOR",
+                    "connection": [
+                        "Y",
+                        "and0_out",
+                        "B1"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": [
+                "sky130_fd_sc_hd__a21bo_1",
+                "sky130_fd_sc_hd__a21bo_2",
+                "sky130_fd_sc_hd__a21bo_4"
+            ],
+            "signals": [
+                {
+                    "input": [
+                        "A1",
+                        "A2",
+                        "B1_N"
+                    ],
+                    "output": [
+                        "X"
+                    ],
+                    "wire": [
+                        "nand0_out"
+                    ]
+                }
+            ],
+            "sim_primitives": [
+                {
+                    "sim_type": "NAND",
+                    "connection": [
+                        "nand0_out",
+                        "A1",
+                        "A2"
+                    ]
+                },
+                {
+                    "sim_type": "NAND",
+                    "connection": [
+                        "X",
+                        "B1_N",
+                        "nand0_out"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": [
+                "sky130_fd_sc_hd__o22ai_1",
+                "sky130_fd_sc_hd__o22ai_2",
+                "sky130_fd_sc_hd__o22ai_4"
+            ],
+            "signals": [
+                {
+                    "input": [
+                        "A1",
+                        "A2",
+                        "B1",
+                        "B2"
+                    ],
+                    "output": [
+                        "Y"
+                    ],
+                    "wire": [
+                        "nor0_out",
+                        "nor1_out"
+                    ]
+                }
+            ],
+            "sim_primitives": [
+                {
+                    "sim_type": "NOR",
+                    "connection": [
+                        "nor0_out",
+                        "B1",
+                        "B2"
+                    ]
+                },
+                {
+                    "sim_type": "NOR",
+                    "connection": [
+                        "nor1_out",
+                        "A1",
+                        "A2"
+                    ]
+                },
+                {
+                    "sim_type": "OR",
+                    "connection": [
+                        "Y",
+                        "nor0_out",
+                        "nor1_out"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": [
+                "sky130_fd_sc_hd__o22a_1",
+                "sky130_fd_sc_hd__o22a_2",
+                "sky130_fd_sc_hd__o22a_4"
+            ],
+            "signals": [
+                {
+                    "input": [
+                        "A1",
+                        "A2",
+                        "B1",
+                        "B2"
+                    ],
+                    "output": [
+                        "X"
+                    ],
+                    "wire": [
+                        "or0_out",
+                        "or1_out"
+                    ]
+                }
+            ],
+            "sim_primitives": [
+                {
+                    "sim_type": "OR",
+                    "connection": [
+                        "or0_out",
+                        "A1",
+                        "A2"
+                    ]
+                },
+                {
+                    "sim_type": "OR",
+                    "connection": [
+                        "or1_out",
+                        "B1",
+                        "B2"
+                    ]
+                },
+                {
+                    "sim_type": "AND",
+                    "connection": [
+                        "X",
+                        "or0_out",
+                        "or1_out"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": [
+                "sky130_fd_sc_hd__o2bb2a_1",
+                "sky130_fd_sc_hd__o2bb2a_2",
+                "sky130_fd_sc_hd__o2bb2a_4"
+            ],
+            "signals": [
+                {
+                    "input": [
+                        "A1_N",
+                        "A2_N",
+                        "B1",
+                        "B2"
+                    ],
+                    "output": [
+                        "X"
+                    ],
+                    "wire": [
+                        "nand0_out",
+                        "or0_out"
+                    ]
+                }
+            ],
+            "sim_primitives": [
+                {
+                    "sim_type": "NAND",
+                    "connection": [
+                        "nand0_out",
+                        "A1_N",
+                        "A2_N"
+                    ]
+                },
+                {
+                    "sim_type": "OR",
+                    "connection": [
+                        "or0_out",
+                        "B1",
+                        "B2"
+                    ]
+                },
+                {
+                    "sim_type": "AND",
+                    "connection": [
+                        "X",
+                        "nand0_out",
+                        "or0_out"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": [
+                "sky130_fd_sc_hd__o21ai_1",
+                "sky130_fd_sc_hd__o21ai_2",
+                "sky130_fd_sc_hd__o21ai_4"
+            ],
+            "signals": [
+                {
+                    "input": [
+                        "A1",
+                        "A2",
+                        "B1"
+                    ],
+                    "output": [
+                        "Y"
+                    ],
+                    "wire": [
+                        "or0_out"
+                    ]
+                }
+            ],
+            "sim_primitives": [
+                {
+                    "sim_type": "OR",
+                    "connection": [
+                        "or0_out",
+                        "A1",
+                        "A2"
+                    ]
+                },
+                {
+                    "sim_type": "NAND",
+                    "connection": [
+                        "Y",
+                        "or0_out",
+                        "B1"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": [
+                "sky130_fd_sc_hd__o2bb2ai_1",
+                "sky130_fd_sc_hd__o2bb2ai_2",
+                "sky130_fd_sc_hd__o2bb2ai_4"
+            ],
+            "signals": [
+                {
+                    "input": [
+                        "A1_N",
+                        "A2_N",
+                        "B1",
+                        "B2"
+                    ],
+                    "output": [
+                        "Y"
+                    ],
+                    "wire": [
+                        "nand0_out",
+                        "or0_out"
+                    ]
+                }
+            ],
+            "sim_primitives": [
+                {
+                    "sim_type": "NAND",
+                    "connection": [
+                        "nand0_out",
+                        "A1_N",
+                        "A2_N"
+                    ]
+                },
+                {
+                    "sim_type": "OR",
+                    "connection": [
+                        "or0_out",
+                        "B1",
+                        "B2"
+                    ]
+                },
+                {
+                    "sim_type": "NAND",
+                    "connection": [
+                        "Y",
+                        "nand0_out",
+                        "or0_out"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": [
+                "sky130_fd_sc_hd__o21a_1",
+                "sky130_fd_sc_hd__o21a_2",
+                "sky130_fd_sc_hd__o21a_4"
+            ],
+            "signals": [
+                {
+                    "input": [
+                        "A1",
+                        "A2",
+                        "B1"
+                    ],
+                    "output": [
+                        "X"
+                    ],
+                    "wire": [
+                        "or0_out"
+                    ]
+                }
+            ],
+            "sim_primitives": [
+                {
+                    "sim_type": "OR",
+                    "connection": [
+                        "or0_out",
+                        "A1",
+                        "A2"
+                    ]
+                },
+                {
+                    "sim_type": "AND",
+                    "connection": [
+                        "X",
+                        "or0_out",
+                        "B1"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": [
+                "sky130_fd_sc_hd__o211a_1",
+                "sky130_fd_sc_hd__o211a_2",
+                "sky130_fd_sc_hd__o211a_4"
+            ],
+            "signals": [
+                {
+                    "input": [
+                        "A1",
+                        "A2",
+                        "B1",
+                        "C1"
+                    ],
+                    "output": [
+                        "X"
+                    ],
+                    "wire": [
+                        "or0_out"
+                    ]
+                }
+            ],
+            "sim_primitives": [
+                {
+                    "sim_type": "OR",
+                    "connection": [
+                        "or0_out",
+                        "A1",
+                        "A2"
+                    ]
+                },
+                {
+                    "sim_type": "AND",
+                    "connection": [
+                        "X",
+                        "or0_out",
+                        "B1",
+                        "C1"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": [
+                "sky130_fd_sc_hd__o21ai_0",
+                "sky130_fd_sc_hd__o21ai_1"
+            ],
+            "signals": [
+                {
+                    "input": [
+                        "A1",
+                        "A2",
+                        "B1"
+                    ],
+                    "output": [
+                        "Y"
+                    ],
+                    "wire": [
+                        "or0_out"
+                    ]
+                }
+            ],
+            "sim_primitives": [
+                {
+                    "sim_type": "OR",
+                    "connection": [
+                        "or0_out",
+                        "A1",
+                        "A2"
+                    ]
+                },
+                {
+                    "sim_type": "NAND",
+                    "connection": [
+                        "Y",
+                        "or0_out",
+                        "B1"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": [
+                "sky130_fd_sc_hd__o211ai_1",
+                "sky130_fd_sc_hd__o211ai_2",
+                "sky130_fd_sc_hd__o211ai_4"
+            ],
+            "signals": [
+                {
+                    "input": [
+                        "A1",
+                        "A2",
+                        "B1",
+                        "C1"
+                    ],
+                    "output": [
+                        "Y"
+                    ],
+                    "wire": [
+                        "or0_out"
+                    ]
+                }
+            ],
+            "sim_primitives": [
+                {
+                    "sim_type": "OR",
+                    "connection": [
+                        "or0_out",
+                        "A1",
+                        "A2"
+                    ]
+                },
+                {
+                    "sim_type": "NAND",
+                    "connection": [
+                        "Y",
+                        "or0_out",
+                        "B1",
+                        "C1"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": [
+                "sky130_fd_sc_hd__o21bai_1",
+                "sky130_fd_sc_hd__o21bai_2",
+                "sky130_fd_sc_hd__o21bai_4"
+            ],
+            "signals": [
+                {
+                    "input": [
+                        "A1",
+                        "A2",
+                        "B1_N"
+                    ],
+                    "output": [
+                        "Y"
+                    ],
+                    "wire": [
+                        "b",
+                        "or0_out"
+                    ]
+                }
+            ],
+            "sim_primitives": [
+                {
+                    "sim_type": "NOT",
+                    "connection": [
+                        "b",
+                        "B1_N"
+                    ]
+                },
+                {
+                    "sim_type": "OR",
+                    "connection": [
+                        "or0_out",
+                        "A1",
+                        "A2"
+                    ]
+                },
+                {
+                    "sim_type": "NAND",
+                    "connection": [
+                        "Y",
+                        "b",
+                        "or0_out"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": [
+                "sky130_fd_sc_hd__o221ai_1",
+                "sky130_fd_sc_hd__o221ai_2"
+            ],
+            "signals": [
+                {
+                    "input": [
+                        "A1",
+                        "A2",
+                        "B1",
+                        "B2",
+                        "C1"
+                    ],
+                    "output": [
+                        "Y"
+                    ],
+                    "wire": [
+                        "or0_out",
+                        "or1_out"
+                    ]
+                }
+            ],
+            "sim_primitives": [
+                {
+                    "sim_type": "OR",
+                    "connection": [
+                        "or0_out",
+                        "B1",
+                        "B2"
+                    ]
+                },
+                {
+                    "sim_type": "OR",
+                    "connection": [
+                        "or1_out",
+                        "A1",
+                        "A2"
+                    ]
+                },
+                {
+                    "sim_type": "NAND",
+                    "connection": [
+                        "Y",
+                        "or0_out",
+                        "or1_out",
+                        "C1"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": [
+                "sky130_fd_sc_hd__o2111ai_1",
+                "sky130_fd_sc_hd__o2111ai_2"
+            ],
+            "signals": [
+                {
+                    "input": [
+                        "A1",
+                        "A2",
+                        "B1",
+                        "C1",
+                        "D1"
+                    ],
+                    "output": [
+                        "Y"
+                    ],
+                    "wire": [
+                        "or0_out"
+                    ]
+                }
+            ],
+            "sim_primitives": [
+                {
+                    "sim_type": "OR",
+                    "connection": [
+                        "or0_out",
+                        "A1",
+                        "A2"
+                    ]
+                },
+                {
+                    "sim_type": "NAND",
+                    "connection": [
+                        "Y",
+                        "or0_out",
+                        "B1",
+                        "C1",
+                        "D1"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": [
+                "sky130_fd_sc_hd__o21ba_1",
+                "sky130_fd_sc_hd__o21ba_2",
+                "sky130_fd_sc_hd__o21ba_4"
+            ],
+            "signals": [
+                {
+                    "input": [
+                        "A1",
+                        "A2",
+                        "B1_N"
+                    ],
+                    "output": [
+                        "X"
+                    ],
+                    "wire": [
+                        "nor0_out"
+                    ]
+                }
+            ],
+            "sim_primitives": [
+                {
+                    "sim_type": "NOR",
+                    "connection": [
+                        "nor0_out",
+                        "A1",
+                        "A2"
+                    ]
+                },
+                {
+                    "sim_type": "NOR",
+                    "connection": [
+                        "X",
+                        "nor0_out",
+                        "B1_N"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": [
+                "sky130_fd_sc_hd__o31ai_1",
+                "sky130_fd_sc_hd__o31ai_2",
+                "sky130_fd_sc_hd__o31ai_4"
+            ],
+            "signals": [
+                {
+                    "input": [
+                        "A1",
+                        "A2",
+                        "A3",
+                        "B1"
+                    ],
+                    "output": [
+                        "Y"
+                    ],
+                    "wire": [
+                        "or0_out"
+                    ]
+                }
+            ],
+            "sim_primitives": [
+                {
+                    "sim_type": "OR",
+                    "connection": [
+                        "or0_out",
+                        "A1",
+                        "A2",
+                        "A3"
+                    ]
+                },
+                {
+                    "sim_type": "NAND",
+                    "connection": [
+                        "Y",
+                        "or0_out",
+                        "B1"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": [
+                "sky130_fd_sc_hd__o31a_1",
+                "sky130_fd_sc_hd__o31a_2",
+                "sky130_fd_sc_hd__o31a_4"
+            ],
+            "signals": [
+                {
+                    "input": [
+                        "A1",
+                        "A2",
+                        "A3",
+                        "B1"
+                    ],
+                    "output": [
+                        "X"
+                    ],
+                    "wire": [
+                        "or0_out"
+                    ]
+                }
+            ],
+            "sim_primitives": [
+                {
+                    "sim_type": "OR",
+                    "connection": [
+                        "or0_out",
+                        "A1",
+                        "A2",
+                        "A3"
+                    ]
+                },
+                {
+                    "sim_type": "AND",
+                    "connection": [
+                        "X",
+                        "or0_out",
+                        "B1"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": [
+                "sky130_fd_sc_hd__o311ai_0",
+                "sky130_fd_sc_hd__o311ai_1",
+                "sky130_fd_sc_hd__o311ai_2",
+                "sky130_fd_sc_hd__o311ai_4"
+            ],
+            "signals": [
+                {
+                    "input": [
+                        "A1",
+                        "A2",
+                        "A3",
+                        "B1",
+                        "C1"
+                    ],
+                    "output": [
+                        "Y"
+                    ],
+                    "wire": [
+                        "or0_out"
+                    ]
+                }
+            ],
+            "sim_primitives": [
+                {
+                    "sim_type": "OR",
+                    "connection": [
+                        "or0_out",
+                        "A1",
+                        "A2",
+                        "A3"
+                    ]
+                },
+                {
+                    "sim_type": "NAND",
+                    "connection": [
+                        "Y",
+                        "or0_out",
+                        "B1",
+                        "C1"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": [
+                "sky130_fd_sc_hd__o221a_1"
+            ],
+            "signals": [
+                {
+                    "input": [
+                        "A1",
+                        "A2",
+                        "B1",
+                        "B2",
+                        "C1"
+                    ],
+                    "output": [
+                        "X"
+                    ],
+                    "wire": [
+                        "or0_out",
+                        "or1_out"
+                    ]
+                }
+            ],
+            "sim_primitives": [
+                {
+                    "sim_type": "OR",
+                    "connection": [
+                        "or0_out",
+                        "B1",
+                        "B2"
+                    ]
+                },
+                {
+                    "sim_type": "OR",
+                    "connection": [
+                        "or1_out",
+                        "A1",
+                        "A2"
+                    ]
+                },
+                {
+                    "sim_type": "AND",
+                    "connection": [
+                        "X",
+                        "or0_out",
+                        "or1_out",
+                        "C1"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": [
+                "sky130_fd_sc_hd__or3b_1"
+            ],
+            "signals": [
+                {
+                    "input": [
+                        "A",
+                        "B",
+                        "C_N"
+                    ],
+                    "output": [
+                        "X"
+                    ],
+                    "wire": [
+                        "not0_out"
+                    ]
+                }
+            ],
+            "sim_primitives": [
+                {
+                    "sim_type": "NOT",
+                    "connection": [
+                        "not0_out",
+                        "C_N"
+                    ]
+                },
+                {
+                    "sim_type": "OR",
+                    "connection": [
+                        "X",
+                        "A",
+                        "B",
+                        "not0_out"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": [
+                "sky130_fd_sc_hd__or4b_1",
+                "sky130_fd_sc_hd__or4b_2"
+            ],
+            "signals": [
+                {
+                    "input": [
+                        "A",
+                        "B",
+                        "C",
+                        "D_N"
+                    ],
+                    "output": [
+                        "X"
+                    ],
+                    "wire": [
+                        "not0_out"
+                    ]
+                }
+            ],
+            "sim_primitives": [
+                {
+                    "sim_type": "NOT",
+                    "connection": [
+                        "not0_out",
+                        "D_N"
+                    ]
+                },
+                {
+                    "sim_type": "OR",
+                    "connection": [
+                        "X",
+                        "not0_out",
+                        "A",
+                        "B",
+                        "C"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": [
+                "sky130_fd_sc_hd__mux2_1",
+                "sky130_fd_sc_hd__mux2_2",
+                "sky130_fd_sc_hd__mux2_4"
+            ],
+            "signals": [
+                {
+                    "input": [
+                        "A0",
+                        "A1",
+                        "S"
+                    ],
+                    "output": [
+                        "X"
+                    ],
+                    "wire": []
+                }
+            ],
+            "sim_primitives": [
+                {
+                    "sim_type": "MUX_2",
+                    "connection": [
+                        "X",
+                        "S",
+                        "A0",
+                        "A1"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": [
+                "sky130_fd_sc_hd__mux2i_1",
+                "sky130_fd_sc_hd__mux2i_2",
+                "sky130_fd_sc_hd__mux2i_4"
+            ],
+            "signals": [
+                {
+                    "input": [
+                        "A0",
+                        "A1",
+                        "S"
+                    ],
+                    "output": [
+                        "Y"
+                    ],
+                    "wire": [
+                        "mux_out"
+                    ]
+                }
+            ],
+            "sim_primitives": [
+                {
+                    "sim_type": "MUX_2",
+                    "connection": [
+                        "mux_out",
+                        "S",
+                        "A0",
+                        "A1"
+                    ]
+                },
+                {
+                    "sim_type": "NOT",
+                    "connection": [
+                        "Y",
+                        "mux_out"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": [
+                "sky130_fd_sc_hd__fa_1",
+                "sky130_fd_sc_hd__fa_2"
+            ],
+            "signals": [
+                {
+                    "input": [
+                        "A",
+                        "B",
+                        "CIN"
+                    ],
+                    "output": [
+                        "COUT",
+                        "SUM"
+                    ],
+                    "wire": [
+                        "or0_out",
+                        "and0_out",
+                        "and1_out",
+                        "and2_out",
+                        "nor0_out",
+                        "nor1_out"
+                    ]
+                }
+            ],
+            "sim_primitives": [
+                {
+                    "sim_type": "OR",
+                    "connection": [
+                        "or0_out",
+                        "B",
+                        "CIN"
+                    ]
+                },
+                {
+                    "sim_type": "AND",
+                    "connection": [
+                        "and0_out",
+                        "A",
+                        "or0_out"
+                    ]
+                },
+                {
+                    "sim_type": "AND",
+                    "connection": [
+                        "and1_out",
+                        "B",
+                        "CIN"
+                    ]
+                },
+                {
+                    "sim_type": "OR",
+                    "connection": [
+                        "COUT",
+                        "and0_out",
+                        "and1_out"
+                    ]
+                },
+                {
+                    "sim_type": "AND",
+                    "connection": [
+                        "and2_out",
+                        "A",
+                        "B",
+                        "CIN"
+                    ]
+                },
+                {
+                    "sim_type": "NOR",
+                    "connection": [
+                        "nor0_out",
+                        "A",
+                        "or0_out"
+                    ]
+                },
+                {
+                    "sim_type": "NOR",
+                    "connection": [
+                        "nor1_out",
+                        "nor0_out",
+                        "COUT"
+                    ]
+                },
+                {
+                    "sim_type": "OR",
+                    "connection": [
+                        "SUM",
+                        "nor1_out",
+                        "and2_out"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": [
+                "sky130_fd_sc_hd__ha_1",
+                "sky130_fd_sc_hd__ha_2"
+            ],
+            "signals": [
+                {
+                    "input": [
+                        "A",
+                        "B"
+                    ],
+                    "output": [
+                        "COUT",
+                        "SUM"
+                    ],
+                    "wire": []
+                }
+            ],
+            "sim_primitives": [
+                {
+                    "sim_type": "AND",
+                    "connection": [
+                        "COUT",
+                        "A",
+                        "B"
+                    ]
+                },
+                {
+                    "sim_type": "XOR",
+                    "connection": [
+                        "SUM",
+                        "A",
+                        "B"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": [
+                "sky130_fd_sc_hd__fah_1"
+            ],
+            "signals": [
+                {
+                    "input": [
+                        "A",
+                        "B",
+                        "CI"
+                    ],
+                    "output": [
+                        "COUT",
+                        "SUM"
+                    ],
+                    "wire": [
+                        "a_b",
+                        "a_ci",
+                        "b_ci"
+                    ]
+                }
+            ],
+            "sim_primitives": [
+                {
+                    "sim_type": "XOR",
+                    "connection": [
+                        "SUM",
+                        "A",
+                        "B",
+                        "CI"
+                    ]
+                },
+                {
+                    "sim_type": "AND",
+                    "connection": [
+                        "a_b",
+                        "A",
+                        "B"
+                    ]
+                },
+                {
+                    "sim_type": "AND",
+                    "connection": [
+                        "a_ci",
+                        "A",
+                        "CI"
+                    ]
+                },
+                {
+                    "sim_type": "AND",
+                    "connection": [
+                        "b_ci",
+                        "B",
+                        "CI"
+                    ]
+                },
+                {
+                    "sim_type": "OR",
+                    "connection": [
+                        "COUT",
+                        "a_b",
+                        "a_ci",
+                        "b_ci"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": [
+                "sky130_fd_sc_hd__maj3_1",
+                "sky130_fd_sc_hd__maj3_2",
+                "sky130_fd_sc_hd__maj3_4"
+            ],
+            "signals": [
+                {
+                    "input": [
+                        "A",
+                        "B",
+                        "C"
+                    ],
+                    "output": [
+                        "X"
+                    ],
+                    "wire": [
+                        "or0_out",
+                        "and0_out",
+                        "and1_out"
+                    ]
+                }
+            ],
+            "sim_primitives": [
+                {
+                    "sim_type": "OR",
+                    "connection": [
+                        "or0_out",
+                        "A",
+                        "B"
+                    ]
+                },
+                {
+                    "sim_type": "AND",
+                    "connection": [
+                        "and0_out",
+                        "or0_out",
+                        "C"
+                    ]
+                },
+                {
+                    "sim_type": "AND",
+                    "connection": [
+                        "and1_out",
+                        "A",
+                        "B"
+                    ]
+                },
+                {
+                    "sim_type": "OR",
+                    "connection": [
+                        "X",
+                        "and0_out",
+                        "and1_out"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": [
+                "sky130_fd_sc_hd__conb_1"
+            ],
+            "signals": [
+                {
+                    "input": [],
+                    "output": [
+                        "HI",
+                        "LO"
+                    ],
+                    "wire": []
+                }
+            ],
+            "sim_primitives": [
+                {
+                    "sim_type": "BUF",
+                    "connection": [
+                        "HI",
+                        "1'b1"
+                    ]
+                },
+                {
+                    "sim_type": "BUF",
+                    "connection": [
+                        "LO",
+                        "1'b0"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": [
+                "sky130_fd_sc_hd__probe_p_8"
+            ],
+            "signals": [
+                {
+                    "input": [
+                        "A"
+                    ],
+                    "output": [
+                        "X"
+                    ],
+                    "wire": []
+                }
+            ],
+            "sim_primitives": [
+                {
+                    "sim_type": "BUF",
+                    "connection": [
+                        "X",
+                        "A"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": [
+                "sky130_fd_sc_hd__fahcon_1"
+            ],
+            "signals": [
+                {
+                    "input": [
+                        "A",
+                        "B",
+                        "CI"
+                    ],
+                    "output": [
+                        "COUT_N",
+                        "SUM"
+                    ],
+                    "wire": [
+                        "a_b",
+                        "a_ci",
+                        "b_ci"
+                    ]
+                }
+            ],
+            "sim_primitives": [
+                {
+                    "sim_type": "XOR",
+                    "connection": [
+                        "SUM",
+                        "A",
+                        "B",
+                        "CI"
+                    ]
+                },
+                {
+                    "sim_type": "NOR",
+                    "connection": [
+                        "a_b",
+                        "A",
+                        "B"
+                    ]
+                },
+                {
+                    "sim_type": "NOR",
+                    "connection": [
+                        "a_ci",
+                        "A",
+                        "CI"
+                    ]
+                },
+                {
+                    "sim_type": "NOR",
+                    "connection": [
+                        "b_ci",
+                        "B",
+                        "CI"
+                    ]
+                },
+                {
+                    "sim_type": "OR",
+                    "connection": [
+                        "COUT_N",
+                        "a_b",
+                        "a_ci",
+                        "b_ci"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": [
+                "sky130_fd_sc_hd__dfrtp_1",
+                "sky130_fd_sc_hd__dfrtp_2",
+                "sky130_fd_sc_hd__dfrtp_4"
+            ],
+            "signals": [
+                {
+                    "input": [
+                        "CLK",
+                        "D",
+                        "RESET_B"
+                    ],
+                    "output": [
+                        "Q"
+                    ],
+                    "wire": [
+                        "RESET"
+                    ]
+                }
+            ],
+            "sim_primitives": [
+                {
+                    "sim_type": "NOT",
+                    "connection": [
+                        "RESET",
+                        "RESET_B"
+                    ]
+                },
+                {
+                    "sim_type": "DFF_PRI",
+                    "connection": [
+                        "Q",
+                        "1'b0",
+                        "RESET",
+                        "CLK",
+                        "D"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": [
+                "sky130_fd_sc_hd__dfxtp_1",
+                "sky130_fd_sc_hd__dfxtp_2",
+                "sky130_fd_sc_hd__dfxtp_4"
+            ],
+            "signals": [
+                {
+                    "input": [
+                        "CLK",
+                        "D"
+                    ],
+                    "output": [
+                        "Q"
+                    ],
+                    "wire": []
+                }
+            ],
+            "sim_primitives": [
+                {
+                    "sim_type": "DFF_PRI",
+                    "connection": [
+                        "Q",
+                        "1'b0",
+                        "1'b0",
+                        "CLK",
+                        "D"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": [
+                "sky130_fd_sc_hd__dfstp_1",
+                "sky130_fd_sc_hd__dfstp_2",
+                "sky130_fd_sc_hd__dfstp_4"
+            ],
+            "signals": [
+                {
+                    "input": [
+                        "CLK",
+                        "D",
+                        "SET_B"
+                    ],
+                    "output": [
+                        "Q"
+                    ],
+                    "wire": [
+                        "SET"
+                    ]
+                }
+            ],
+            "sim_primitives": [
+                {
+                    "sim_type": "NOT",
+                    "connection": [
+                        "SET",
+                        "SET_B"
+                    ]
+                },
+                {
+                    "sim_type": "DFF_PRI",
+                    "connection": [
+                        "Q",
+                        "SET",
+                        "1'b0",
+                        "CLK",
+                        "D"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": [
+                "sky130_fd_sc_hd__edfxtp_1"
+            ],
+            "signals": [
+                {
+                    "input": [
+                        "CLK",
+                        "D",
+                        "DE"
+                    ],
+                    "output": [
+                        "Q"
+                    ],
+                    "wire": [
+                        "mux_out"
+                    ]
+                }
+            ],
+            "sim_primitives": [
+                {
+                    "sim_type": "MUX_2",
+                    "connection": [
+                        "mux_out",
+                        "DE",
+                        "Q",
+                        "D"
+                    ]
+                },
+                {
+                    "sim_type": "DFF_PRI",
+                    "connection": [
+                        "Q",
+                        "1'b0",
+                        "1'b0",
+                        "CLK",
+                        "mux_out"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": [
+                "sky130_fd_sc_hd__sedfxtp_1"
+            ],
+            "signals": [
+                {
+                    "input": [
+                        "CLK",
+                        "D",
+                        "DE",
+                        "SCD",
+                        "SCE"
+                    ],
+                    "output": [
+                        "Q"
+                    ],
+                    "wire": [
+                        "mux_out",
+                        "de_d"
+                    ]
+                }
+            ],
+            "sim_primitives": [
+                {
+                    "sim_type": "MUX_2",
+                    "connection": [
+                        "de_d",
+                        "DE",
+                        "Q",
+                        "D"
+                    ]
+                },
+                {
+                    "sim_type": "MUX_2",
+                    "connection": [
+                        "mux_out",
+                        "SCE",
+                        "de_d",
+                        "SCD"
+                    ]
+                },
+                {
+                    "sim_type": "DFF_PRI",
+                    "connection": [
+                        "Q",
+                        "1'b0",
+                        "1'b0",
+                        "CLK",
+                        "mux_out"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": [
+                "sky130_fd_sc_hd__edfxbp_1"
+            ],
+            "signals": [
+                {
+                    "input": [
+                        "CLK",
+                        "D",
+                        "DE"
+                    ],
+                    "output": [
+                        "Q",
+                        "Q_N"
+                    ],
+                    "wire": [
+                        "mux_out"
+                    ]
+                }
+            ],
+            "sim_primitives": [
+                {
+                    "sim_type": "MUX_2",
+                    "connection": [
+                        "mux_out",
+                        "DE",
+                        "Q",
+                        "D"
+                    ]
+                },
+                {
+                    "sim_type": "DFF_PRI",
+                    "connection": [
+                        "Q",
+                        "1'b0",
+                        "1'b0",
+                        "CLK",
+                        "mux_out"
+                    ]
+                },
+                {
+                    "sim_type": "NOT",
+                    "connection": [
+                        "Q_N",
+                        "Q"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": [
+                "sky130_fd_sc_hd__sedfxbp_1"
+            ],
+            "signals": [
+                {
+                    "input": [
+                        "CLK",
+                        "D",
+                        "DE",
+                        "SCD",
+                        "SCE"
+                    ],
+                    "output": [
+                        "Q",
+                        "Q_N"
+                    ],
+                    "wire": [
+                        "mux_out",
+                        "de_d"
+                    ]
+                }
+            ],
+            "sim_primitives": [
+                {
+                    "sim_type": "MUX_2",
+                    "connection": [
+                        "de_d",
+                        "DE",
+                        "Q",
+                        "D"
+                    ]
+                },
+                {
+                    "sim_type": "MUX_2",
+                    "connection": [
+                        "mux_out",
+                        "SCE",
+                        "de_d",
+                        "SCD"
+                    ]
+                },
+                {
+                    "sim_type": "DFF_PRI",
+                    "connection": [
+                        "Q",
+                        "1'b0",
+                        "1'b0",
+                        "CLK",
+                        "mux_out"
+                    ]
+                },
+                {
+                    "sim_type": "NOT",
+                    "connection": [
+                        "Q_N",
+                        "Q"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": [
+                "sky130_fd_sc_hd__dfsbp_1",
+                "sky130_fd_sc_hd__dfsbp_2"
+            ],
+            "signals": [
+                {
+                    "input": [
+                        "CLK",
+                        "D",
+                        "SET_B"
+                    ],
+                    "output": [
+                        "Q",
+                        "Q_N"
+                    ],
+                    "wire": [
+                        "SET"
+                    ]
+                }
+            ],
+            "sim_primitives": [
+                {
+                    "sim_type": "NOT",
+                    "connection": [
+                        "SET",
+                        "SET_B"
+                    ]
+                },
+                {
+                    "sim_type": "DFF_PRI",
+                    "connection": [
+                        "Q",
+                        "SET",
+                        "1'b0",
+                        "CLK",
+                        "D"
+                    ]
+                },
+                {
+                    "sim_type": "NOT",
+                    "connection": [
+                        "Q_N",
+                        "Q"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": [
+                "sky130_fd_sc_hd__dfrbp_1",
+                "sky130_fd_sc_hd__dfrbp_2"
+            ],
+            "signals": [
+                {
+                    "input": [
+                        "CLK",
+                        "D",
+                        "RESET_B"
+                    ],
+                    "output": [
+                        "Q",
+                        "Q_N"
+                    ],
+                    "wire": [
+                        "RESET"
+                    ]
+                }
+            ],
+            "sim_primitives": [
+                {
+                    "sim_type": "NOT",
+                    "connection": [
+                        "RESET",
+                        "RESET_B"
+                    ]
+                },
+                {
+                    "sim_type": "DFF_PRI",
+                    "connection": [
+                        "Q",
+                        "1'b0",
+                        "RESET",
+                        "CLK",
+                        "D"
+                    ]
+                },
+                {
+                    "sim_type": "NOT",
+                    "connection": [
+                        "Q_N",
+                        "Q"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": [
+                "sky130_fd_sc_hd__dfxbp_1",
+                "sky130_fd_sc_hd__dfxbp_2"
+            ],
+            "signals": [
+                {
+                    "input": [
+                        "CLK",
+                        "D"
+                    ],
+                    "output": [
+                        "Q",
+                        "Q_N"
+                    ],
+                    "wire": []
+                }
+            ],
+            "sim_primitives": [
+                {
+                    "sim_type": "DFF_PRI",
+                    "connection": [
+                        "Q",
+                        "1'b0",
+                        "1'b0",
+                        "CLK",
+                        "D"
+                    ]
+                },
+                {
+                    "sim_type": "NOT",
+                    "connection": [
+                        "Q_N",
+                        "Q"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": [
+                "sky130_fd_sc_hd__dfrtn_1"
+            ],
+            "signals": [
+                {
+                    "input": [
+                        "CLK_N",
+                        "D",
+                        "RESET_B"
+                    ],
+                    "output": [
+                        "Q"
+                    ],
+                    "wire": [
+                        "RESET",
+                        "intclk"
+                    ]
+                }
+            ],
+            "sim_primitives": [
+                {
+                    "sim_type": "NOT",
+                    "connection": [
+                        "RESET",
+                        "RESET_B"
+                    ]
+                },
+                {
+                    "sim_type": "NOT",
+                    "connection": [
+                        "intclk",
+                        "CLK_N"
+                    ]
+                },
+                {
+                    "sim_type": "DFF_PRI",
+                    "connection": [
+                        "Q",
+                        "1'b0",
+                        "RESET",
+                        "intclk",
+                        "D"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": [
+                "sky130_fd_sc_hd__dfbbn_1"
+            ],
+            "signals": [
+                {
+                    "input": [
+                        "D",
+                        "CLK_N",
+                        "SET_B",
+                        "RESET_B"
+                    ],
+                    "output": [
+                        "Q",
+                        "Q_N"
+                    ],
+                    "wire": [
+                        "SET",
+                        "RESET",
+                        "CLK",
+                        "c"
+                    ]
+                }
+            ],
+            "sim_primitives": [
+                {
+                    "sim_type": "NOT",
+                    "connection": [
+                        "SET",
+                        "SET_B"
+                    ]
+                },
+                {
+                    "sim_type": "NOT",
+                    "connection": [
+                        "RESET",
+                        "RESET_B"
+                    ]
+                },
+                {
+                    "sim_type": "NOT",
+                    "connection": [
+                        "CLK",
+                        "CLK_N"
+                    ]
+                },
+                {
+                    "sim_type": "AND",
+                    "connection": [
+                        "c",
+                        "SET_B",
+                        "RESET"
+                    ]
+                },
+                {
+                    "sim_type": "DFF_PRI",
+                    "connection": [
+                        "Q",
+                        "SET",
+                        "c",
+                        "CLK",
+                        "D"
+                    ]
+                },
+                {
+                    "sim_type": "NOT",
+                    "connection": [
+                        "Q_N",
+                        "Q"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": [
+                "sky130_fd_sc_hd__dlygate4sd1_1"
+            ],
+            "signals": [
+                {
+                    "input": [
+                        "A"
+                    ],
+                    "output": [
+                        "X"
+                    ],
+                    "wire": []
+                }
+            ],
+            "sim_primitives": [
+                {
+                    "sim_type": "BUF",
+                    "connection": [
+                        "X",
+                        "A"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": [
+                "sky130_fd_sc_hd__dlygate4sd2_1"
+            ],
+            "signals": [
+                {
+                    "input": [
+                        "A"
+                    ],
+                    "output": [
+                        "X"
+                    ],
+                    "wire": []
+                }
+            ],
+            "sim_primitives": [
+                {
+                    "sim_type": "BUF",
+                    "connection": [
+                        "X",
+                        "A"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": [
+                "sky130_fd_sc_hd__dlymetal6s2s_1"
+            ],
+            "signals": [
+                {
+                    "input": [
+                        "A"
+                    ],
+                    "output": [
+                        "X"
+                    ],
+                    "wire": []
+                }
+            ],
+            "sim_primitives": [
+                {
+                    "sim_type": "BUF",
+                    "connection": [
+                        "X",
+                        "A"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": [
+                "sky130_fd_sc_hd__dlygate4sd3_1"
+            ],
+            "signals": [
+                {
+                    "input": [
+                        "A"
+                    ],
+                    "output": [
+                        "X"
+                    ],
+                    "wire": []
+                }
+            ],
+            "sim_primitives": [
+                {
+                    "sim_type": "BUF",
+                    "connection": [
+                        "X",
+                        "A"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": [
+                "sky130_fd_sc_hd__dfbbp_1"
+            ],
+            "signals": [
+                {
+                    "input": [
+                        "D",
+                        "CLK",
+                        "SET_B",
+                        "RESET_B"
+                    ],
+                    "output": [
+                        "Q",
+                        "Q_N"
+                    ],
+                    "wire": [
+                        "SET",
+                        "RESET",
+                        "c"
+                    ]
+                }
+            ],
+            "sim_primitives": [
+                {
+                    "sim_type": "NOT",
+                    "connection": [
+                        "SET",
+                        "SET_B"
+                    ]
+                },
+                {
+                    "sim_type": "NOT",
+                    "connection": [
+                        "RESET",
+                        "RESET_B"
+                    ]
+                },
+                {
+                    "sim_type": "AND",
+                    "connection": [
+                        "c",
+                        "SET_B",
+                        "RESET"
+                    ]
+                },
+                {
+                    "sim_type": "DFF_PRI",
+                    "connection": [
+                        "Q",
+                        "SET",
+                        "c",
+                        "CLK",
+                        "D"
+                    ]
+                },
+                {
+                    "sim_type": "NOT",
+                    "connection": [
+                        "Q_N",
+                        "Q"
+                    ]
+                }
+            ]
+        }
+    ]
+}
